@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "installCommand": "npm install && npm --prefix settle-frontend install",
+  "buildCommand": "npm --prefix settle-frontend run build",
+  "outputDirectory": "settle-frontend/dist",
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
